@@ -14,11 +14,12 @@ export const App = () => {
     <div>
         <h2>Lista de presença</h2>
         <ul>
-            {list.map((item) => (
-                <li>{item}</li>
+            {list.map((item, index) => (
+                <li key={index}>{item.toUpperCase()}</li>
             ))}
         </ul>
 
     </div>
   );
 }
+
